@@ -16,12 +16,5 @@ const create = async () => {
         }
 };
 
-// if ((await fs.stat('./files/fresh.txt')).isFile()) {
-//     console.log('yet')
-//     throw new Error('FS operation failed')
-// } else {
-//     const content = 'I am fresh and young'
-//     await fs.writeFile('./files/fresh.txt', content)
-// }
 
 await create();
