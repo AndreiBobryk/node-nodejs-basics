@@ -17,7 +17,7 @@ const rename = async () => {
     const __dirname = dirname(fileURLToPath(import.meta.url));
     try {
         const source = path.join(__dirname, 'files', 'wrongFilename.txt')
-        const destination = path.join(__dirname, 'files', 'wrongFilename.txt')
+        const destination = path.join(__dirname, 'files', 'properFilename.md')
         const isDestinationPathFile = await exists(destination)
         const isSourcePathFile = await exists(source)
         if (isDestinationPathFile || !isSourcePathFile) {
